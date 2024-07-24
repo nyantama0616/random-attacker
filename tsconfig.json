@@ -9,12 +9,16 @@
     }
   ],
   "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    } /* Linting */,
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    } /* Linting */,
   }
 }

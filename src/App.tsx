@@ -1,7 +1,12 @@
+import { ContentViewer } from './components/ContentViewer/ContentViewer';
+import { useRandomContent } from './hooks/useRandomContent';
+
 function App() {
+  const content = useRandomContent();
+
   return (
-    <div>
-      <h1 className="text-red-300">hello</h1>
+    <div className="w-24 m-auto flex justify-center">
+      <ContentViewer content={content} />
     </div>
   );
 }
